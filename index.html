@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Psicóloga Brenda | Psicologia Clínica</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
@@ -11,10 +10,10 @@
 <style>
 
 :root{
---bege:#F4EFEA;
---verde:#A6B2A1;
+--bege:#F6F1EB;
+--verde:#9FAF9C;
 --verde-escuro:#7F8F84;
---texto:#3F3F3F;
+--texto:#3E3E3E;
 --branco:#FFFFFF;
 }
 
@@ -23,29 +22,32 @@ margin:0;
 font-family:'Montserrat', sans-serif;
 background-color:var(--bege);
 color:var(--texto);
-line-height:1.7;
+line-height:1.8;
 }
 
 h1,h2{
 font-family:'Cormorant Garamond', serif;
 font-weight:500;
-letter-spacing:0.5px;
-}
-
-section{
-padding:100px 25px;
-max-width:1000px;
-margin:auto;
 }
 
 .hero{
-background-color:var(--bege);
+height:100vh;
+background:url('https://images.unsplash.com/photo-1506126613408-eca07ce68773') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
-padding:160px 20px;
+color:white;
+padding:20px;
+}
+
+.hero-overlay{
+background:rgba(0,0,0,0.35);
+padding:60px;
 }
 
 .hero h1{
-font-size:48px;
+font-size:54px;
 max-width:800px;
 margin:auto;
 }
@@ -53,12 +55,12 @@ margin:auto;
 .hero p{
 font-size:20px;
 max-width:650px;
-margin:30px auto;
+margin:25px auto;
 }
 
 .btn{
 display:inline-block;
-padding:14px 38px;
+padding:14px 40px;
 background-color:var(--verde);
 color:white;
 text-decoration:none;
@@ -71,56 +73,73 @@ transition:0.3s;
 background-color:var(--verde-escuro);
 }
 
+section{
+padding:110px 25px;
+max-width:1100px;
+margin:auto;
+}
+
 .white{
-background-color:var(--branco);
+background-color:white;
 }
 
 .quote{
-font-size:28px;
+font-size:30px;
 font-family:'Cormorant Garamond', serif;
 text-align:center;
 max-width:800px;
 margin:auto;
 }
 
-.center{
-text-align:center;
-}
-
-.columns{
+.about{
 display:flex;
-gap:50px;
+gap:60px;
 flex-wrap:wrap;
+align-items:center;
 }
 
-.col{
+.about img{
+width:100%;
+max-width:420px;
+border-radius:8px;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
+.text{
 flex:1;
 min-width:280px;
+}
+
+.editorial-title{
+font-size:40px;
+text-align:center;
+margin-bottom:60px;
 }
 
 .footer{
 background-color:var(--verde);
 color:white;
 text-align:center;
-padding:60px 20px;
-}
-
-.footer p{
-margin:6px 0;
+padding:70px 20px;
 }
 
 @media(max-width:768px){
 
+.hero{
+height:80vh;
+}
+
 .hero h1{
-font-size:34px;
+font-size:36px;
 }
 
 section{
-padding:70px 20px;
+padding:80px 20px;
 }
 
-.quote{
-font-size:22px;
+.about{
+flex-direction:column;
+text-align:center;
 }
 
 }
@@ -130,96 +149,85 @@ font-size:22px;
 
 <body>
 
-<!-- CAPA -->
+<!-- CAPA COM IMAGEM -->
 
-<section class="hero">
+<div class="hero">
+<div class="hero-overlay">
 <h1>Psicologia Clínica</h1>
-<p>Oferecendo um espaço seguro e individualizado para que cada pessoa possa se conhecer, se fortalecer e transformar sua jornada.</p>
+<p>Um espaço seguro e individualizado para que você possa se conhecer, se fortalecer e transformar sua jornada.</p>
 <a href="https://wa.me/5544920001009" class="btn">Agendar sessão</a>
-</section>
+</div>
+</div>
 
-<!-- QUEM SOU -->
+<!-- FRASE EDITORIAL -->
 
 <section class="white">
 <div class="quote">
-“Dedico-me à Psicologia Clínica, oferecendo um espaço seguro e individualizado para que cada pessoa possa se conhecer, se fortalecer e transformar sua jornada.”
+“Dedico-me à Psicologia Clínica oferecendo um espaço seguro, ético e individualizado.”
 </div>
 </section>
 
+<!-- SOBRE COM FOTO PROFISSIONAL -->
+
 <section>
-<h2 class="center">Quem Sou</h2>
+<h2 class="editorial-title">Quem Sou</h2>
 
-<div class="columns">
-<div class="col">
-<p>Meu nome é Brenda, sou Psicóloga desde 2015, pós-graduada em Saúde Mental e Psicologia do Trabalho.</p>
+<div class="about">
 
-<p>Iniciei minha jornada profissional na área de Recursos Humanos (Gestão de Pessoas), atuando em empresas dos segmentos de Cooperativismo, Tecnologia e Marketing Digital.</p>
+<img src="https://images.unsplash.com/photo-1580489944761-15a19d654956" alt="Foto profissional">
 
-<p>Minha formação e experiência permitem compreender tanto os aspectos emocionais quanto os desafios profissionais que atravessam a vida dos pacientes.</p>
-</div>
+<div class="text">
+<p>Meu nome é Brenda, sou Psicóloga desde 2015, com pós-graduação em Saúde Mental e Psicologia do Trabalho.</p>
 
-<div class="col">
+<p>Minha trajetória inclui experiência na área de Recursos Humanos, atuando em diferentes segmentos organizacionais, o que amplia minha compreensão sobre os desafios emocionais e profissionais da vida contemporânea.</p>
+
 <p>O processo terapêutico é construído de forma personalizada, respeitando sua história, seus valores e seu ritmo.</p>
 
-<p>CRP 04/83072</p>
+<p><strong>CRP 04/83072</strong></p>
 </div>
+
 </div>
 </section>
 
 <!-- COMO FUNCIONA -->
 
 <section class="white">
-<h2 class="center">Como Funcionam as Sessões de Psicoterapia</h2>
+<h2 class="editorial-title">Como Funcionam as Sessões</h2>
 
-<p>A psicoterapia precisa, antes de tudo, ser um espaço seguro, seja na modalidade online ou presencial.</p>
+<p>A psicoterapia é um processo estruturado com base na ética, confidencialidade e individualidade.</p>
 
-<p>O setting terapêutico é estruturado com base no cuidado, confidencialidade e ética profissional. Cada sessão é planejada de forma individualizada, respeitando a singularidade de cada pessoa e seus objetivos terapêuticos.</p>
+<p>As sessões têm duração de 50 minutos, preferencialmente semanais, podendo ocorrer na modalidade online ou presencial.</p>
 
-<p>Duração de 50 minutos, preferencialmente semanal.</p>
+<p>A primeira sessão é dedicada à compreensão profunda da sua história e dos seus objetivos terapêuticos, sendo essencial para construção de vínculo e direcionamento clínico.</p>
 
-<p>Sigilo absoluto conforme o Código de Ética Profissional do Psicólogo.</p>
-</section>
-
-<!-- PROCESSO -->
-
-<section>
-<h2 class="center">Na Prática</h2>
-
-<p>Durante os encontros, por meio de escuta qualificada e intervenções técnicas, trabalhamos a compreensão de padrões emocionais, comportamentais e relacionais.</p>
-
-<p>A psicoterapia não é aconselhamento, mas um processo contínuo e científico.</p>
-
-<p>A primeira sessão consiste na compreensão profunda da sua história e dos seus objetivos terapêuticos, sendo essencial para construção de vínculo e direcionamento clínico.</p>
 </section>
 
 <!-- ONLINE -->
 
-<section class="white">
-<h2 class="center">Sessões Online</h2>
+<section>
+<h2 class="editorial-title">Sessões Online</h2>
 
-<p>As sessões ocorrem semanalmente, conforme disponibilidade de agenda previamente acordada.</p>
+<p>Os atendimentos online são realizados via Google Meet, conforme horário previamente agendado.</p>
 
-<p>Na modalidade online, os atendimentos são realizados via Google Meet.</p>
-
-<p>É necessário possuir acesso à internet e dispositivos compatíveis.</p>
+<p>É necessário possuir acesso à internet e dispositivo compatível.</p>
 
 <p>Em caso de ausência, é necessário comunicar com antecedência mínima de 24 horas.</p>
+
 </section>
 
 <!-- COMPROMISSO -->
 
-<section>
-<h2 class="center">Meu Trabalho no Seu Desenvolvimento</h2>
+<section class="white">
+<h2 class="editorial-title">Meu Compromisso</h2>
 
-<p>Iniciar a psicoterapia requer responsabilidade emocional. É permitir-se olhar para si com mais cuidado e saúde.</p>
+<p>Iniciar a psicoterapia é permitir-se olhar para si com mais cuidado e responsabilidade emocional.</p>
 
-<p>Meu compromisso é oferecer um espaço seguro, onde você possa se expressar com liberdade, compreender suas experiências e desenvolver habilidades para lidar com os desafios da vida de maneira mais consciente e equilibrada.</p>
+<p>Meu compromisso é oferecer um ambiente seguro onde você possa compreender suas experiências e desenvolver recursos internos para lidar com os desafios da vida com mais consciência e equilíbrio.</p>
 
-<p>Se você sente que este é o momento de iniciar ou retomar sua jornada terapêutica, estarei à disposição para acompanhá-lo(a).</p>
-
-<div class="center">
+<div style="text-align:center; margin-top:40px;">
 <a href="https://wa.me/5544920001009" class="btn">Iniciar acompanhamento</a>
 </div>
+
 </section>
 
 <!-- CONTATO -->
