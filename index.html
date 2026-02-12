@@ -3,101 +3,124 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Psicóloga Brenda | Psicoterapia Clínica</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<title>Psicóloga Brenda | Psicologia Clínica</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #F8F6F2;
-    color: #3E3E3E;
-    line-height: 1.6;
+:root{
+--bege:#F4EFEA;
+--verde:#A6B2A1;
+--verde-escuro:#7F8F84;
+--texto:#3F3F3F;
+--branco:#FFFFFF;
 }
 
-h1, h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 600;
+body{
+margin:0;
+font-family:'Montserrat', sans-serif;
+background-color:var(--bege);
+color:var(--texto);
+line-height:1.7;
 }
 
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 80px 25px;
+h1,h2{
+font-family:'Cormorant Garamond', serif;
+font-weight:500;
+letter-spacing:0.5px;
 }
 
-.hero {
-    text-align: center;
-    padding: 140px 25px;
-    background: linear-gradient(to bottom, #EFEAE3, #F8F6F2);
+section{
+padding:100px 25px;
+max-width:1000px;
+margin:auto;
 }
 
-.hero h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
+.hero{
+background-color:var(--bege);
+text-align:center;
+padding:160px 20px;
 }
 
-.hero p {
-    font-size: 18px;
-    max-width: 600px;
-    margin: auto;
+.hero h1{
+font-size:48px;
+max-width:800px;
+margin:auto;
 }
 
-.button {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 14px 36px;
-    background-color: #8FA89A;
-    color: white;
-    text-decoration: none;
-    border-radius: 40px;
-    font-weight: 500;
-    transition: 0.3s ease;
+.hero p{
+font-size:20px;
+max-width:650px;
+margin:30px auto;
 }
 
-.button:hover {
-    background-color: #7E9688;
+.btn{
+display:inline-block;
+padding:14px 38px;
+background-color:var(--verde);
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:500;
+transition:0.3s;
 }
 
-.section-light {
-    background-color: white;
+.btn:hover{
+background-color:var(--verde-escuro);
 }
 
-.section-soft {
-    background-color: #F1ECE6;
+.white{
+background-color:var(--branco);
 }
 
-.columns {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
+.quote{
+font-size:28px;
+font-family:'Cormorant Garamond', serif;
+text-align:center;
+max-width:800px;
+margin:auto;
 }
 
-.column {
-    flex: 1;
-    min-width: 280px;
+.center{
+text-align:center;
 }
 
-ul {
-    padding-left: 20px;
+.columns{
+display:flex;
+gap:50px;
+flex-wrap:wrap;
 }
 
-.footer {
-    text-align: center;
-    background-color: #EFEAE3;
-    padding: 60px 20px;
-    font-size: 15px;
+.col{
+flex:1;
+min-width:280px;
 }
 
-@media (max-width: 768px) {
-
-.hero h1 {
-    font-size: 30px;
+.footer{
+background-color:var(--verde);
+color:white;
+text-align:center;
+padding:60px 20px;
 }
 
-.container {
-    padding: 60px 20px;
+.footer p{
+margin:6px 0;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:34px;
+}
+
+section{
+padding:70px 20px;
+}
+
+.quote{
+font-size:22px;
 }
 
 }
@@ -107,59 +130,105 @@ ul {
 
 <body>
 
+<!-- CAPA -->
+
 <section class="hero">
-    <h1>Psicoterapia com acolhimento e ética profissional</h1>
-    <p>Um espaço seguro para você se conhecer, fortalecer sua saúde emocional e transformar sua jornada.</p>
-    <a href="https://wa.me/5544920001009" class="button">Agendar Sessão</a>
+<h1>Psicologia Clínica</h1>
+<p>Oferecendo um espaço seguro e individualizado para que cada pessoa possa se conhecer, se fortalecer e transformar sua jornada.</p>
+<a href="https://wa.me/5544920001009" class="btn">Agendar sessão</a>
 </section>
 
-<section class="container section-light">
-    <div class="columns">
-        <div class="column">
-            <h2>Quem Sou</h2>
-            <p>Sou Psicóloga desde 2015, com pós-graduação em Saúde Mental e Psicologia do Trabalho.</p>
-            <p>Minha trajetória inclui experiência em Recursos Humanos, atuando em diferentes segmentos empresariais.</p>
-            <p>Dedico-me à Psicologia Clínica oferecendo um espaço seguro, ético e individualizado.</p>
-            <p><strong>CRP 04/83072</strong></p>
-        </div>
-        <div class="column">
-            <h2>Como Posso Ajudar</h2>
-            <ul>
-                <li>Compreensão emocional</li>
-                <li>Ansiedade e sobrecarga</li>
-                <li>Conflitos internos</li>
-                <li>Autoconhecimento</li>
-                <li>Equilíbrio entre vida pessoal e profissional</li>
-            </ul>
-        </div>
-    </div>
+<!-- QUEM SOU -->
+
+<section class="white">
+<div class="quote">
+“Dedico-me à Psicologia Clínica, oferecendo um espaço seguro e individualizado para que cada pessoa possa se conhecer, se fortalecer e transformar sua jornada.”
+</div>
 </section>
 
-<section class="container section-soft">
-    <h2>Como Funcionam as Sessões</h2>
-    <p>As sessões têm duração de 50 minutos, preferencialmente semanais, na modalidade online ou presencial.</p>
-    <p>O processo terapêutico é estruturado com base na ética, confidencialidade e individualidade.</p>
-    <p>A primeira sessão é dedicada à compreensão da sua história e direcionamento terapêutico.</p>
+<section>
+<h2 class="center">Quem Sou</h2>
+
+<div class="columns">
+<div class="col">
+<p>Meu nome é Brenda, sou Psicóloga desde 2015, pós-graduada em Saúde Mental e Psicologia do Trabalho.</p>
+
+<p>Iniciei minha jornada profissional na área de Recursos Humanos (Gestão de Pessoas), atuando em empresas dos segmentos de Cooperativismo, Tecnologia e Marketing Digital.</p>
+
+<p>Minha formação e experiência permitem compreender tanto os aspectos emocionais quanto os desafios profissionais que atravessam a vida dos pacientes.</p>
+</div>
+
+<div class="col">
+<p>O processo terapêutico é construído de forma personalizada, respeitando sua história, seus valores e seu ritmo.</p>
+
+<p>CRP 04/83072</p>
+</div>
+</div>
 </section>
 
-<section class="container section-light">
-    <h2>Atendimento Online</h2>
-    <p>Os atendimentos online são realizados via Google Meet, em horário previamente agendado.</p>
-    <p>É necessário possuir acesso à internet e dispositivo compatível.</p>
-    <p>Cancelamentos devem ser comunicados com antecedência mínima de 24 horas.</p>
+<!-- COMO FUNCIONA -->
+
+<section class="white">
+<h2 class="center">Como Funcionam as Sessões de Psicoterapia</h2>
+
+<p>A psicoterapia precisa, antes de tudo, ser um espaço seguro, seja na modalidade online ou presencial.</p>
+
+<p>O setting terapêutico é estruturado com base no cuidado, confidencialidade e ética profissional. Cada sessão é planejada de forma individualizada, respeitando a singularidade de cada pessoa e seus objetivos terapêuticos.</p>
+
+<p>Duração de 50 minutos, preferencialmente semanal.</p>
+
+<p>Sigilo absoluto conforme o Código de Ética Profissional do Psicólogo.</p>
 </section>
 
-<section class="container section-soft">
-    <h2>Meu Compromisso</h2>
-    <p>Iniciar a psicoterapia é um ato de responsabilidade emocional.</p>
-    <p>Meu compromisso é oferecer um ambiente seguro para que você possa compreender suas experiências e desenvolver recursos internos com mais consciência e equilíbrio.</p>
+<!-- PROCESSO -->
+
+<section>
+<h2 class="center">Na Prática</h2>
+
+<p>Durante os encontros, por meio de escuta qualificada e intervenções técnicas, trabalhamos a compreensão de padrões emocionais, comportamentais e relacionais.</p>
+
+<p>A psicoterapia não é aconselhamento, mas um processo contínuo e científico.</p>
+
+<p>A primeira sessão consiste na compreensão profunda da sua história e dos seus objetivos terapêuticos, sendo essencial para construção de vínculo e direcionamento clínico.</p>
 </section>
+
+<!-- ONLINE -->
+
+<section class="white">
+<h2 class="center">Sessões Online</h2>
+
+<p>As sessões ocorrem semanalmente, conforme disponibilidade de agenda previamente acordada.</p>
+
+<p>Na modalidade online, os atendimentos são realizados via Google Meet.</p>
+
+<p>É necessário possuir acesso à internet e dispositivos compatíveis.</p>
+
+<p>Em caso de ausência, é necessário comunicar com antecedência mínima de 24 horas.</p>
+</section>
+
+<!-- COMPROMISSO -->
+
+<section>
+<h2 class="center">Meu Trabalho no Seu Desenvolvimento</h2>
+
+<p>Iniciar a psicoterapia requer responsabilidade emocional. É permitir-se olhar para si com mais cuidado e saúde.</p>
+
+<p>Meu compromisso é oferecer um espaço seguro, onde você possa se expressar com liberdade, compreender suas experiências e desenvolver habilidades para lidar com os desafios da vida de maneira mais consciente e equilibrada.</p>
+
+<p>Se você sente que este é o momento de iniciar ou retomar sua jornada terapêutica, estarei à disposição para acompanhá-lo(a).</p>
+
+<div class="center">
+<a href="https://wa.me/5544920001009" class="btn">Iniciar acompanhamento</a>
+</div>
+</section>
+
+<!-- CONTATO -->
 
 <section class="footer">
-    <h2>Contato</h2>
-    <p>Email: psi.brenda.s.rodrigues@gmail.com</p>
-    <p>WhatsApp: (44) 92000-1009</p>
-    <p>Instagram: @psi.brenda.rodrigues</p>
+<h2>Canais de Atendimento</h2>
+<p>Email: psi.brenda.s.rodrigues@gmail.com</p>
+<p>WhatsApp: (44) 92000-1009</p>
+<p>Instagram: @psi.brenda.rodrigues</p>
 </section>
 
 </body>
