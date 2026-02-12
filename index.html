@@ -3,212 +3,260 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Psicóloga Brenda | Psicologia Clínica</title>
+<title>Brenda Rodrigues | Psicologia Clínica</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
-/* ========== ROOT COLORS ========== */
-:root {
-    --bege: #F8F6F2;
-    --verde: #9FAF9C;
-    --verde-escuro: #7F8F84;
-    --texto: #3E3E3E;
-    --branco: #FFFFFF;
-    --cinza-claro: #EFECEA;
+/* =======================
+   PALETA E BASE
+======================= */
+
+:root{
+--bg:#F7F4F0;
+--white:#FFFFFF;
+--green:#8FA79A;
+--green-dark:#748C7E;
+--text:#3D3D3D;
+--soft:#EDE8E2;
 }
 
-/* ========== GLOBAL STYLES ========== */
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--bege);
-    color: var(--texto);
-    font-size: 16px;
-    line-height: 1.7;
+body{
+margin:0;
+font-family:'Montserrat', sans-serif;
+background:var(--bg);
+color:var(--text);
+line-height:1.8;
 }
 
-h1, h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 600;
-    margin: 0 0 15px 0;
+h1,h2,h3{
+font-family:'Playfair Display', serif;
+font-weight:600;
+margin:0 0 20px 0;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+section{
+padding:100px 25px;
+max-width:1150px;
+margin:auto;
 }
 
-/* ========== BUTTON ========== */
-.btn {
-    display: inline-block;
-    padding: 14px 36px;
-    background-color: var(--verde);
-    color: white;
-    border-radius: 30px;
-    font-weight: 500;
-    transition: .3s ease;
+/* =======================
+   HERO
+======================= */
+
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1506126613408-eca07ce68773') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+color:white;
 }
 
-.btn:hover {
-    background-color: var(--verde-escuro);
-    opacity: .9;
+.hero::after{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.35);
 }
 
-/* ========== HEADER HERO ========== */
-.hero {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-image: url("https://images.unsplash.com/photo-1523958203904-cdcb402031fd");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+.hero-content{
+position:relative;
+max-width:800px;
+padding:20px;
 }
 
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.35);
+.hero h1{
+font-size:54px;
 }
 
-.hero-content {
-    position: relative;
-    color: white;
-    max-width: 800px;
+.hero p{
+font-size:20px;
+margin:25px 0 35px;
 }
 
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+.btn{
+display:inline-block;
+padding:14px 38px;
+background:var(--green);
+color:white;
+border-radius:40px;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
 }
 
-.hero p {
-    font-size: 20px;
-    margin-bottom: 30px;
+.btn:hover{
+background:var(--green-dark);
 }
 
-/* ========== SECTIONS ========== */
-section {
-    padding: 90px 25px;
-    max-width: 1100px;
-    margin: 0 auto;
+/* =======================
+   SOBRE
+======================= */
+
+.about{
+display:flex;
+gap:60px;
+flex-wrap:wrap;
+align-items:center;
 }
 
-.section-white {
-    background-color: var(--branco);
+.about img{
+width:100%;
+max-width:450px;
+border-radius:8px;
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
 }
 
-.section-gray {
-    background-color: var(--cinza-claro);
+.about-text{
+flex:1;
+min-width:280px;
 }
 
-/* ========== ABOUT SECTION ========== */
-.about {
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-    align-items: center;
+/* =======================
+   SEÇÕES ALTERNADAS
+======================= */
+
+.soft{
+background:var(--soft);
 }
 
-.about img {
-    width: 100%;
-    max-width: 450px;
-    border-radius: 8px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+.center{
+text-align:center;
 }
 
-/* ========== FOOTER ========== */
-.footer {
-    background-color: var(--verde);
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-    font-size: 15px;
+/* =======================
+   FOOTER
+======================= */
+
+footer{
+background:var(--green);
+color:white;
+text-align:center;
+padding:70px 20px;
 }
 
-.footer p {
-    margin: 5px 0;
+/* =======================
+   RESPONSIVO
+======================= */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:36px;
 }
 
-/* ========== RESPONSIVE ========== */
-@media (max-width:768px) {
-    .hero h1 { font-size: 36px; }
-    .hero p { font-size: 18px; }
+section{
+padding:70px 20px;
+}
+
+.about{
+flex-direction:column;
+text-align:center;
+}
+
 }
 
 </style>
-
 </head>
+
 <body>
 
-<!-- HERO / CAPA -->
+<!-- HERO -->
 
 <section class="hero">
-    <div class="hero-content">
-        <h1>Psicoterapia com acolhimento e ética</h1>
-        <p>Um espaço seguro para você viver mais equilíbrio, autoconhecimento e fortalecimento emocional.</p>
-        <a href="https://wa.me/5544920001009" class="btn">Agendar sessão</a>
-    </div>
+<div class="hero-content">
+<h1>Psicoterapia com acolhimento e ética profissional</h1>
+<p>Um espaço seguro para você se conhecer, fortalecer sua saúde emocional e transformar sua jornada.</p>
+<a href="https://wa.me/5544920001009" class="btn">Agendar sessão</a>
+</div>
 </section>
 
 <!-- SOBRE -->
 
-<section class="section-white">
-    <h2>Quem Sou</h2>
-    <div class="about">
-        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" alt="Foto profissional">
-        <div>
-            <p>Meu nome é Brenda, sou Psicóloga desde 2015, com pós-graduação em Saúde Mental e Psicologia do Trabalho.</p>
-            <p>Iniciei minha carreira na área de Recursos Humanos, atuando em empresas dos segmentos de Cooperativismo, Tecnologia e Marketing Digital.</p>
-            <p>Minha formação e experiência permitem unir compreensão emocional e prática profissional para caminhar junto com você no processo terapêutico.</p>
-            <p><strong>CRP 04/83072</strong></p>
-        </div>
-    </div>
+<section>
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1580489944761-15a19d654956" alt="Foto profissional">
+
+<div class="about-text">
+<h2>Quem Sou</h2>
+<p>Sou Psicóloga desde 2015, com pós-graduação em Saúde Mental e Psicologia do Trabalho.</p>
+
+<p>Iniciei minha trajetória profissional na área de Recursos Humanos (Gestão de Pessoas), atuando em empresas dos segmentos de Cooperativismo, Tecnologia e Marketing Digital.</p>
+
+<p>Minha formação e experiência permitem integrar aspectos emocionais e desafios profissionais no processo terapêutico.</p>
+
+<p><strong>CRP 04/83072</strong></p>
+</div>
+
+</div>
 </section>
 
 <!-- COMO FUNCIONA -->
 
-<section class="section-gray">
-    <h2>Como Funcionam as Sessões</h2>
-    <p>A psicoterapia é um espaço estrutuado com base na ética, confidencialidade e singularidade da sua história.</p>
-    <p>Cada sessão tem duração de 50 minutos, preferencialmente semanais, podendo ser presencial ou online.</p>
-    <p>O processo é individualizado e respeita seus objetivos e ritmo de vida.</p>
+<section class="soft">
+<h2 class="center">Como Funcionam as Sessões</h2>
+
+<p>A psicoterapia é um espaço estruturado de cuidado, confidencialidade e ética profissional. Cada encontro é planejado de forma individualizada, respeitando sua história, seus objetivos e seu ritmo.</p>
+
+<p>As sessões têm duração de 50 minutos, preferencialmente semanais, podendo ocorrer na modalidade online ou presencial.</p>
+
+</section>
+
+<!-- PROCESSO -->
+
+<section>
+<h2 class="center">Na Prática</h2>
+
+<p>Durante os encontros, por meio de escuta qualificada e intervenções técnicas, trabalhamos a compreensão de padrões emocionais, comportamentais e relacionais.</p>
+
+<p>A primeira sessão é dedicada à compreensão profunda da sua história e dos seus objetivos terapêuticos, fortalecendo o vínculo e direcionamento clínico.</p>
+
 </section>
 
 <!-- ONLINE -->
 
-<section class="section-white">
-    <h2>Sessões Online</h2>
-    <p>As sessões online são realizadas via Google Meet, em horário previamente agendado.</p>
-    <p>É necessário possuir acesso à internet e um dispositivo compatível.</p>
-    <p>Cancelamentos devem acontecer com antecedência mínima de 24 horas.</p>
+<section class="soft">
+<h2 class="center">Sessões Online</h2>
+
+<p>Os atendimentos online são realizados via Google Meet, conforme horário previamente agendado.</p>
+
+<p>É necessário possuir acesso à internet e dispositivo compatível.</p>
+
+<p>Cancelamentos devem ser comunicados com antecedência mínima de 24 horas.</p>
+
 </section>
 
 <!-- COMPROMISSO -->
 
-<section class="section-gray">
-    <h2>Meu Compromisso</h2>
-    <p>Iniciar a psicoterapia é um ato de responsabilidade emocional. Meu compromisso é oferecer um espaço seguro, acolhedor e ético para acompanhar a sua caminhada de autoconhecimento.</p>
-    <p>Estou aqui para caminhar com você no seu processo de transformação emocional.</p>
+<section>
+<h2 class="center">Meu Compromisso</h2>
+
+<p>Iniciar a psicoterapia é um ato de responsabilidade emocional.</p>
+
+<p>Meu compromisso é oferecer um ambiente seguro onde você possa se expressar com liberdade, compreender suas experiências e desenvolver habilidades para lidar com os desafios da vida com mais consciência e equilíbrio.</p>
+
+<div class="center" style="margin-top:40px;">
+<a href="https://wa.me/5544920001009" class="btn">Iniciar acompanhamento</a>
+</div>
+
 </section>
 
-<!-- CONTATO / RODAPÉ -->
+<!-- CONTATO -->
 
-<section class="footer">
-    <h2>Canais de Atendimento</h2>
-    <p>Email: psi.brenda.s.rodrigues@gmail.com</p>
-    <p>WhatsApp: (44) 92000-1009</p>
-    <p>Instagram: @psi.brenda.rodrigues</p>
-</section>
+<footer>
+<h2>Canais de Atendimento</h2>
+<p>Email: psi.brenda.s.rodrigues@gmail.com</p>
+<p>WhatsApp: (44) 92000-1009</p>
+<p>Instagram: @psi.brenda.rodrigues</p>
+</footer>
 
 </body>
 </html>
